@@ -3,14 +3,14 @@ name: Release
 on:
   push:
     tags:
-      - '*'
+      - 'release/*'
 
 jobs:
   release:
 
     environment:
       name: pypi
-      url: https://pypi.org/project/${{ github.event.repository.name }}
+      url: https://pypi.org/project/via_mypy_clean_slate
 
     runs-on: ubuntu-latest
     permissions:
